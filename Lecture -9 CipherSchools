@@ -1,20 +1,27 @@
 1. TRIM: This function eliminates all spaces. 
    • -> =TRIM(cell_name) in syntax
 
-2 PROPER: Each string is converted to an uppercase letter. Syntax -> =PROPER(cell_name)
-Three, uppercase letters are converted to uppercase letters. Syntax is =UPPER(cell_name).
-Syntax -> =LOWER(Text _name) 4 LOWER - It converts all letters to lower letters
+2 PROPER: Each string is converted to an uppercase letter.
+Syntax -> =PROPER(cell_name)
+Three, uppercase letters are converted to uppercase letters. 
+Syntax is =UPPER(cell_name).
+Syntax -> =LOWER(Text _name) 
+4 LOWER - It converts all letters to lower letters
 
  Function for manipulating text
-Left: This aids in printing characters in accordance with our needs. Syntax: =left (cell_name, 5)
+Left: This aids in printing characters in accordance with our needs. 
+Syntax: =left (cell_name, 5)
 2. Mid - This function returns the specified character count from the text. Syntax: =MID(cell_name,start point, character count)
 3. Search: This feature facilitates the search for a specific character or group of characters. Syntax: =SEARCH("What you want to search",cell_name)
 4. Len: This indicates the length of a specific cell. Syntax: =LEN(cell_name )
 5. Right: Depending on how many characters you chose, it keeps the last character in a text string. Syntax: =RIGHT(cell_name,LEN(cell_name)-SEARCH(" ", A2)
 
 TEXT INTEGRATION:
-The process of concatenating two or more cells into one is called concatenation. The syntax for this is =CONCATENTATION(cell_name,cell_name).
-2. Text join: It has the ability to merge text from several ranges. Its definition of "delimitorsa" is contained in a separate section. • Syntax -> ==TEXTJOIN("-",TRUE,cell_name,cell_name)
+The process of concatenating two or more cells into one is called concatenation. 
+The syntax for this is =CONCATENTATION(cell_name,cell_name).
+2. Text join: It has the ability to merge text from several ranges. 
+Its definition of "delimitorsa" is contained in a separate section. 
+•Syntax -> ==TEXTJOIN("-",TRUE,cell_name,cell_name)
 
 
 LOGICAL FUNCTION IN CONDITION
