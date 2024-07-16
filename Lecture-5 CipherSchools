@@ -1,1 +1,12 @@
+What is GitLab?
+GitLab is an online Git repository that offers wikis, issue-following features, and free public and private repositories.
+Important characteristics:
+  • CI/CD Pipelines; 
+• Issue tracking
+  • Requests for mergers
+Overview of Google Colab:
+Google Colab: What is it?
+  • A cloud service that is free
+  • Enables users to utilize a browser to write and run Python code
 
+Important features include: • No setup needed; • Free GPU and TPUS access; • Simple sharing
