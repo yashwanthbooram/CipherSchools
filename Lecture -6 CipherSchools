@@ -1,1 +1,74 @@
+Overview of Version Control:
 
+Version Control: What Is It?
+If, while working on or revising a stored document, we make some changes and the newly updated version regrettably displays some errors. The document then effortlessly reverts to its former version. The easiest and most sophisticated method of modifying a document is through version control.
+
+Why is Version Control important when developing software?
+Version control makes it possible for each person to work on their own versions autonomously, preventing interference from other parties.
+
+******************************************************************************
+
+GIT is one of the most widely used version control systems. Independent developers love it for its robust branching and distributed nature, which makes it a darling in the cooperative world.
+
+
+
+Git: What Is It?
+A distributed version control system is called Git. Every developer using Git for a project has a local copy of the entire project history in this case. This makes it possible to control modifications in the corresponding versions.
+
+Important features include: local and remote repositories; branches; snapshots.
+
+Git init, git add, git commit, and git status are examples of basic commands.
+
+******************************************************************************
+
+A Repostiory: What Is It?
+It is a directory or storage space that is a part of a file in a project. There are two categories for these:
+
+Local: Users can add or commit their own changes to these repositories, which are kept on their own computer or workstation.
+Remote: Direct storage of these repositories is done on the server.
+
+******************************************************************************
+
+
+Branches: What Are They?
+Assuming a developer is working on a project, a master branch is the culmination of the project's life cycle. To ensure that their work is autonomous from that of others, each developer in this situation develops a separate branch that only contains the tasks related to their specific function in the project. We refer to this as branching.
+The two commands used in Git to create a branch and switch between branches are branch and checkout.
+
+
+How does Push work?
+Git Push is a command that allows you to push code from your local repository to the main branch or remote repository so that other people can view it.
+We must confirm that our modifications have been committed before using the push command.
+Actions: Commit -> Add -> Push
+
+What is a pull request?
+A request has been made to merge your code into the main branch so that developers can collaborate, review, and improve their work together on projects or code.
+Merge requests: What are they?
+That and the Pull Request are comparable.
+Actions: Push -> Master/Main Merge -> Detailed explanation of the modifications done.
+
+Commit: What Is It?
+After any changes are made, saving or taking a snapshot of the project's progress while documenting the changes' context.
+Actions: Git add -> (to add, then modify) git commit
+Basic Git Actions Flowchart:
+
+Create Repository -> Clone -> Pull -> Commit -> Push -> Merge
+                                |                         |         
+                              Fetch -----------------------  
+
+Managing Projects with Git:
+
+• Version tracking (git log, git diff, git blame); • Branch management; • Merging and conflicts;
+
+
+GitHub: What is it?
+Git is an open source version control system that allows many users to make distinct changes to web pages simultaneously. GitHub is an online interface that leverages this technology.
+Important characteristics:
+  • Forks (copy and change) • Pull requests
+  • Features of social networking for developers
+
+What is GitLab?
+GitLab is an online Git repository that offers wikis, issue-following features, and free public and private repositories.
+Important characteristics:
+  • CI/CD Pipelines; 
+• Issue tracking
+  • Requests for mergers
