@@ -1,1 +1,52 @@
 
+Building Reports And Dashboards
+
+How Can I Make a Basic Dashboard?
+
+Here's the dataset that was used: Human Resources Data Set: https://www.kaggle.com/datasets/rhuebner/
+Step 1 is data import.
+Upon launching the Power BI program, the initial step is to obtain access to your data.
+Any format can be used to import your dataset with ease.
+Next, select the Get Data button that is situated in the screen's middle left corner.
+The Files option is displayed in the navigation pane. 
+After selecting Files, navigate to the location of your Excel workbook or any other format. After selecting your file, press the Connect button.
+Processing takes a little while, depending on the size of the file.
+Click the Load button after confirming that the data has been extracted.
+
+
+Step2: Examine Your Information.
+You may view the data in tabular form by selecting the Data tab.
+There is a list of fields in those tables on the right. 
+To apply formatting operations to a table or field, you can pick them. 
+You can modify the datatype or format of any fields, including date, time, city, state, percentage value, currency, etc., from the Modeling tab.
+
+Step 3: Select the Appropriate Chart.
+We therefore choose to focus on five data for our dashboard: 
+EmployerId, Position, Hiredyear, RecruitmentSource, and male-female employment.
+A card will be the first visualization we create. From the visualizations section, choose Card.
+From the Fields section, choose which columns you wish to include to the graphic. 
+Additionally, you can drag & drop the fields into the appropriate columns as seen in the image below. 
+By selecting columns and using filters, you can format the image using the Format icon.
+The total number of employers is displayed on the first card that we made. 
+The remaining cards underwent the same processes. 
+The maximum salary, positions, and number of recruitment sources are displayed on the second, third, and fourth cards, accordingly.
+Subsequently, we will generate a Pie Chart and a Donut Chart to display the number of positions and the male-female rate, respectively. 
+Include this Visualizations chart. 
+To display the number of hires annually and the recruitment source proportionately, add a funnel and stacked bar chart at the end. 
+Arrange the plot area, axes, legend, data labels, title, and colors, among other elements.
+
+Top Tips for Creating a Successful Dashboard: • Recognize your audience.
+• Summarize the plot right away.
+• Utilize the full screen.
+• Emphasize the data that is most pertinent.
+• Put the most crucial details in the upper left corner.
+• Make use of the appropriate visuals.
+• Make restricted use of filters and slicers.
+• Toothlessly lowers the number. i.e., Finish the number rounding.
+
+Avoid these common mistakes: • Inaccurate labeling inside the dashboard.
+• Excessive Color Use.
+• An abundance of slicers.
+• Bringing in All of the Data.
+• Get rid of any unnecessary visual interactions.
+
