@@ -1,1 +1,46 @@
+The Fundamentals of Data Visualization
 
+-What is Visulation of Data?
+Presenting data in a visual manner, like charts, graphs, and maps, is known as data visualization. By making it simpler to spot patterns, trends, and outliers, it aids data scientists in their understanding and interpretation of complicated data sets. Compared to raw data or statistical models, graphics are frequently more intuitive and simple to understand, therefore this can be very helpful when explaining findings to others.
+
+-Different kinds of stories?
+1. A line graph
+2. Bar graph 
+3. Pie chart
+4. Histogram
+5. Scatter Plot: Hours worked versus Productivity 
+6. Box Plot: Department-wise Salaries
+
+- Microsoft released Power BI; - Plotly 
+1. It is an open source library with a lot of capability. 
+2. It produces an interactive chart. 
+3. The chart's range is extensive. 
+4. Cross-platform assistance
+
+It has two language usages:
+-R - Python
+
+The data visualization principle is:
+-Principle 1 -> Clarity 1. Keep things simple 2. Make use of distinct visual hierarchy 
+
+Principle 2: Availability
+1. Use a color scheme that is accessible to color blind people.
+2. Verify the text's readable
+
+Principle 3 -> Accuracy 1. Make use of the proper axes and scales
+2. Steer clear of deceptive statements
+
+Principle 4 -> Significance 
+1. Adapt visualizations to the audience; 2. Emphasize the most crucial information 
+
+-Principle 5 -Attributes 
+1. Balance color and design element 2. Make good use of whitespace 
+
+-Theory 6: Interaction
+1. A sample of an interaction tool (such as drill-down and hover).
+2. Data exploration is a benefit of interaction
+
+
+Principle 70: Context
+1. Remember the big picture
+2. Data pointer for comparison and contrast
