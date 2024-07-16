@@ -1,1 +1,12 @@
+DATE: It was used to fix the (year, month, and date) format.
+ • Syntax: -> =DATE (month, date, year)
 
+DAY: This provides the specific day. Syntax: =DAY(cell_name) 
+EDATE: Provides the desired data in a specified format. Syntax: =EDATE((Starting_date,No of month))
+
+NOTE: We must transform the date into a data format because Advance Excel stores the date as a serial number.
+
+ WEEKDAY: It indicates the day of the specified date. 
+   • WEEKDAY(cell_name) is the syntax.
+HOUR: It solely provides the hour. Syntax: HOUR(cell_name)
+MINUTE: It provides simply the minute. Syntax: -> MINUTE(cell_name)
