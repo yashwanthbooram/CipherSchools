@@ -1,1 +1,24 @@
 
+PIVOT TABLE: - It facilitates summarization and analysis - It presents and explores the data appropriately -
+It automatically sorts the data - It counts the total number of values automatically 
+- It computes the total of specific values within a group of values 
+It assists in presenting a new table with all of these results and summarizing the data. 
+
+WORKING:
+- Data Summarization: total, average, count, min, etc.
+-Data Filtering: product, region, and data filters 
+Data grouping options include dates, monthly, quarterly, product, and area. % calculations include % of total and percentage change.
+
+PIVOT CHART: A pivot chart is an addition to a pivot table that shows the data summaryed in the pivot table graphically. 
+- It makes dynamic data visualization possible. 
+WORKING:
+- Modifying the sorts of charts (column, bar, line, etc.) - Tailoring the chart's elements (titles, labels, data labels, colors, etc.)
+-Excavating deeper data: Investigate data points interactively and in depth 
+
+POWER QUERY: - It finds, connects, combines, and refines data from a wide range of sources.
+-It offers a simple method for importing, cleansing, and transforming data before doing an Excel analysis.
+WORKINGS:
+-Merging Queries: integrate information from various sources or tables
+-Appending Queries: combine information from related tables
+-Unpivoting Column: To improve analysis, turn a column into a row. 
+Adding customer calculation and transformation when creating a calculated column
