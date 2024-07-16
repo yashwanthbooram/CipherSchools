@@ -1,1 +1,35 @@
 
+Data Modeling And Dax Basics
+DAX = Data Analysis Expressions Key DAX Functions:
+SUM, COUNT, and IF 1. SUM • Function: SUM(ColumnName) 
+• Description: Adds all the numbers in a column. 
+• Real-Life Scenario: Calculating the total sales amount in a sales dataset.
+
+2. COUNT • Function: COUNT (ColumnName)" 
+• Description: Counts the number of non-blank cells in a column. 
+• Real-Life Scenario: Counting the number of orders placed by customers.
+
+3. IF
+• IF (LogicalTest, ResultIfTrue, ResultIfFalse) is the function.
+• Description: Returns a value if the condition is true and a different value if it is false.
+• Real-World Example: Classifying sales as "High" or "Low" in accordance with a sales criterion.
+
+Real-World DAX Function Use Case Examples:
+1. Sales analysis; 
+2. inventory control; 
+3. insights into the customer
+4. Reporting on Finances
+5. Personnel
+6. Management of Projects; 
+7. Analysis of Marketing
+8. Effectiveness of Operations
+
+Benefits of Employing DAX Functions
+1. Performance Optimization
+2. Data Manipulation 3. Dynamic Calculations
+4. Integration 5. Reusability
+6. Scalability
+7. Flexibility
+8. User-Friendly
+9. Custom Calculations
+10. Enhanced Reporting
