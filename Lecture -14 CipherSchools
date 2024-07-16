@@ -1,1 +1,104 @@
+Lambda Expressions, Functions, and Error Handling
 
+FUNCTION
+Functions are defined as reusable code blocks that carry out particular tasks. Function aids in the modularization of code, improving its organization and maintainability.
+
+# Simple Fuction :
+def add_number(a,b):
+    return a+b
+print (add_number(5,4))
+ -output  9
+
+#Function with default Argument 
+def greet(name,message="hello):
+     return f"{ message},{name}!"
+print (greet("YASH"))   -output : hello YASH
+print(greet("Pranav",:hi)) -output : hi Pranav
+
+#Function with variable  Argument
+def sum_all(*args)
+    return sum(args)
+ print(sum_all(1,2,3,4))
+output-15
+#Function with keyword  Argument  
+def display_info(** kwargs):
+   for key,value in kwargs.iteam():
+      print(f"{key} : {value}")
+
+display _info(name="Yash",age=19,city="Hyderabad")
+output- name-Yash
+         age-19
+        city-Hyderabad
+
+LAMBDA EXPRESSION: 
+The lambda keyword is used to define lambda expressions, also known as anonaymois functions, which are short, unmanaged functions. 
+They are frequently employed for fleeting, quick tasks. 
+
+Use case in real life - lambda expression are commonaly used in sorting algorithm where a customer sorting key is needed  
+For example -  # Simple lambda Fuction 
+           square.lambda x:x*x
+           ##calling the lambda function 
+         print (square(5))       -output->25
+
+ lambda function in map
+number=[1,2,3,4,5,6]
+square=list(map(lambda x:x*x,number))
+
+print(square)     -output->1,4,9,16,25,36
+# lambda function in filter
+ number=[1,2,3,4,5,6]
+even_number=list(map(lambda x:x%2==0,number))
+
+print(even_number)  -output->2,4,6
+
+ 
+# lambda function in Sorted
+ student=[("Alice",25),("Yash"),19]
+sorted_student=Sorted(students,key=lambda student:student[1]
+print(sort_student)  -output->[('Yash' :19)]
+                              =[("Alice",25)]
+
+#ERROR HANDLING 
+Python uses the try, expect, elsee, and finally block statements to handle errors.
+ It enables you to verify that the software continues to execute and handle expectations appropriately. 
+
+#Basic Try-Except Block
+-try:
+    result=10/0
+-except ZeroDivisionError
+    print("cannot divide by zero")     -output: cannot divide by zero
+
+# Try Except-Else Block
+-try:
+    result=10/2
+-except ZeroDivisionError:
+    print("cannot divide by zero") 
+-else :
+     print("division sucessfully")      -output: division sucessfully
+
+
+# Try Except-finally Block
+-try:
+    result=10/2
+-except ZeroDivisionError:
+    print("cannot divide by zero") 
+-Finally:
+     print("execution completed")   -output:execution completed
+
+# Handling Multiple Exeception
+-try:
+    number=int(input("Enter a number"))
+    result=10/number
+-except ValueError
+    print("Invalid input! Please enter a number)
+-except ZeroDivisionError:
+    print("cannot divide by zero") 
+
+# Raising Exception 
+def check_postive(number):
+     if number<=0
+        ("Number must be positive")
+-try:
+   check_postion(-5)
+-except ValueError:
+   print(e)
