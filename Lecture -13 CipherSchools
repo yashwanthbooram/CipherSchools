@@ -1,1 +1,73 @@
+The Basics of Python: Variables, Data Types, Conditionals, and Loops
 
+Guido van Rossum designed it in 1991. Applications for Python include web development, software development, mathematics, system scripting, and data science. 
+
+Why Python is cross-platform compatible (working on Windows, Mac, Linux, Raspberry Pi, etc.)
+
+Python recognizes the different kinds of variables automatically. 
+
+Variable and datatypes: A variable is the program's name for a memory region. 
+
+Datatypes: In Python, these are mostly the following: a. Integer: This data type stores numerical values, such as 1, 2, and 1.
+Built-in integer function and operation: num = 10;
+1. output (abs(num))  ##Output of absolute value -> 10
+##binary representation output->1010 print(bn(num))
+3. output(hex(num))  ##hexa output representation ->Oxa 
+3. Print the function power function output (pow(num,2)) to get 100
+4. print(divmod(num,3)) ##Remainder output & Quouient -> 3,1
+
+b. Floating number: A decimal number, such as 1.1,24.5, will be accepted. 
+Built-in float functionality and operation:
+print(round(price)) as 1.  ## Round the result to 100
+
+-Typecasting - print(int(price)) -> output as an integer-=99
+String (greeting="hello world!") c. Convert string to integer output-=1234 --print(Float("1234))
+
+Built-in features and capabilities for String:
+1. "greeting.lower()" print   ##transform to smaller
+
+2. put the greeting.upper() print   ##transform to upper
+3. print("world","python") from greetings.replace()   ## for Substring Replacement 
+4. print(split() greeting)  #divide a string into a list 
+Printing "greeting.find("world")" 5. ## discover the substring universe  
+6. print(len(Greetings)) ##string length
+
+c.Tuple() cannot be changed; it is immutable.
+   Location=(10.0,20.0)
+Built-in tuple function and operation:
+1.count: the frequency with which a number appears 
+2. index: locate a certain index 
+3. len, or the tuple's length
+You can change in tuple by converting tuple into list  
+for eg : coordiante=(10.0,20.0);
+  Now convert in list :
+li=list(coordinate)
+Now print (li)
+[10.0,20.0]
+d.List[]: This can be changed; it is mutable.Fruit=["apples","banana","cherry"] is an example of a container to hold a set of values of any data type.
+
+Built-in list operation and function:
+1.Append-It always adds at the list's conclusion 
+2. Extend: At the conclusion of the list, it adds.
+3. Remove: An element is removed; 4. Pop: The final element is removed
+5. Sort: The list is sorted. 
+6.len - the list's length 
+7. index: locate the index for a specific value 
+
+c.Tuple() cannot be changed; it is immutable.
+   Location=(10.0,20.0)
+Built-in tuple function and operation:
+1.count: the frequency with which a number appears 
+2. index: locate a certain index 
+3. len, or the tuple's length
+
+e. Set: This is a grouping of unique elements; for example, se={1,2,3,4}; do not permit duplicates.
+To check the length, use -length =; to add the value, use add
+
+Declarative condition:
+-if -elif -else, for instance, a = 200 b = 33
+print("B is greater than a") if b > a
+print("A and B are Equal") elif a == b
+print("a is greater than b") otherwise
+
+ Conditon 3 is operational in this example, and conditions 1 and 2 adhere to the requirement. 
