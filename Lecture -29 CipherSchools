@@ -1,1 +1,44 @@
+Overview of Machine Learning
 
+Who is Al?
+• Machine simulation of human intellect processes.
+ Alternatively, it is a computer's capacity for thought and learning.
+
+Artificial Intelligence Terms: 
+Learning 
+Reasoning 
+Self-Correction
+ Types of AI
+                            |
+        ------------------------------------------
+        |                                        |
+    Weak AI                                Strong AI
+
+ML: What is it?
+The branch of Al known as "machine learning" use statistical techniques to enable computers to get better at what they do by feeding them more and more training data.
+- Human Learning: Perceptions ➡ Education ➡ Competencies
+- Machine Learning: Data ➡ Model/Predictor ➡ Predict
+
+Types of AL include: • Supervised Learning, which is a machine learning model applied to a labeled data set.
+Labeled Data and Labels ➡ Machine ➡ ML Model ➡ Predictions 
+• Unsupervised Learning: A Machine Learning model that works on Unlabeled set of data. It works by analyzing the similar kinds of pattern in the data and classify them according to that.
+DDCD ➡ Model ➡ DDDDD
+CCDD             CCC
+
+Clustering is the process of organizing unlabeled items into groups according to comparable occurrences.
+
+1. Classifying spam emails = Supervised Learning
+2. Supervised and Unsupervised Recommendation System
+3. Classification of cats and dogs = Supervised Learning
+4. Unsupervised Learning via Cat-Dog Clustering
+5. Being a superior Supervised and unsupervised go games
+
+
+• Artificial Intelligrnce (1950s-1980s): Any technique which enables computers to mimic human behavior.
+• Machine Learning (1980s-2010s): AI technique that give computers the ability to learn without being explicitly programmed to do so.
+• Deep Learning (2010s....): A subset of ML which makes the computation of multi-layer nerursl networks feasible.
+
+Data science: what is it?
+• The study of data science involves the use of statistical methods and tools to glean valuable insights from data.
+• These insights can be derived from a variety of data sources, such as databases, business transactions, sensors, and more. 
+• Data science creates predictive models by utilizing sophisticated machine learning techniques.
