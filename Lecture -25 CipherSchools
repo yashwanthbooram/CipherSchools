@@ -1,1 +1,89 @@
+Inferential Statistics & Hypothesis Testing
 
+Testing of Hypotheses
+
+Definition: Using data from a sample, hypothesis testing is a statistical technique for decision-making.
+Finding out if there is sufficient evidence in a sample of data to draw the conclusion that a particular condition holds true for the entire population is the aim.
+
+The steps involved in hypothesis testing are as follows:
+1. Describe the Theories:
+• The Null Hypothesis (HO) asserts that there is neither an effect nor a difference, and it is a declaration of "no change" or "no difference."
+• Alternative Hypothesis (H1 or Ha): This hypothesis states that "there is an effect" or "there is a difference," and it contradicts the null hypothesis.
+
+Steps involved in hypothesis testing: 
+1. Formulate the theories.
+2. Select the Level of Significance (a).
+3. Gather Information and Determine a Test Statistic.
+4. Find the value of P.
+5. Come to a Resolution.
+
+Test Types: 1. Z-test
+2. The T-test
+3. A comparison
+4. The Chi-square Exam
+
+Scenario: Over the course of a season, a basketball coach asserts that his team scores more than 50 points each game on average.
+Using the results of five games that were chosen at random, we wish to verify this assertion.
+
+2. Describe the Theories:
+• H0: μ = 50
+• H1: μ = 50
+
+3. Comparison: • Examine the difference between the sample mean (51.2) and the estimated mean (50).
+
+4. Come to a Decision: • We tend to reject the null hypothesis in favor of the alternative if the sample mean is higher than the predicted mean.
+We are not utilizing a formal test statistic or computing a p-value in this condensed example.
+
+Decision: The sample mean of 51.2 is greater than 50. 
+This straightforward comparison leads us to the conclusion that the coach's assertion that the squad scores more than 50 points each game on average is supported by the data, even if we ignore the statistical rigor of error probability.
+
+1. A/B testing for product development and marketing
+For instance, an online store might experiment with two distinct homepage designs (A and B) to determine which generates more revenue.
+The alternative hypothesis (H1) could contend that design B outperforms design A in terms of sales, while the null hypothesis (HO) might contend that there is no difference in sales between the two designs.
+
+
+2. Health Care and Medicine
+For instance, a raw medication is created to reduce blood pressure.
+In a clinical trial, the novel medication is given to one group while a placebo is given to another.
+The new medication may have an effect on blood pressure, which would be the alternative to the null hypothesis that it has no effect.
+
+INFERENTIAL STATISTICS
+
+Essential Ideas in Inferential Statistics
+1. The Sample and Population:
+  • Population: The total group about which you wish to make inferences.
+  • Sample: A portion of the population that serves as a group representative.
+
+Calculation:
+• Point estimation: This method involves estimating an unknown population parameter (such as the population mean or proportion) using sample data.
+• Confidence intervals (interval estimation): 
+An interval estimation, as opposed to a single point estimate, gives a range with a specific level of confidence (usually 95% or 99%) within which the parameter is predicted to lie.
+
+Common Point Estimators:
+
+• Sample Mean (2) as a Population Mean (μ) estimate.
+• The Population Proportion (p) can be estimated using the Sample Proportion (p).
+• The population variance (02) can be estimated using the sample variance (s2).
+
+Example:
+Assuming that the sample is representative of the entire class, the average score (sample mean) that you compute from a sample of students' test results is a point estimate of the population mean score.
+
+Estimation: 
+• Point Estimation: This method involves estimating an unknown population parameter (such as the population mean or proportion) by use of sample data.
+• Interval Estimation (Confidence Intervals): An interval estimate, as opposed to a single point estimate, gives a range with a given level of confidence (usually 95% or 99%) within which the parameter is predicted to lie.
+
+Confidence interval components include:
+
+• Confidence Level: This is a measure of the likelihood that the true population parameter is contained in the confidence interval derived from a sample. 
+It is commonly given as a percentage, such as 95% or 99%.
+• Margin of Error: The range that the actual parameter is anticipated to fall between and above the point estimate.
+
+Formula for Confidence Interval:
+
+For a population mean, the confidence interval is typically calculated as:
+where:
+
+• x is the sample mean.
+• z is the z-score corresponding to the desired confidence level (e.g., 1.96 for 95% confidence).
+• s is the sample standard deviation.
+• 12 is the sample size.
