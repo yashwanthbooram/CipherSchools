@@ -1,1 +1,65 @@
 
+Definition of Correlation:
+
+The degree and direction of a linear link between two variables are measured by correlation. The Pearson's correlation coefficient is a number between -1 and +1.
+Use Cases:
+
+In order to help with portfolio diversification, correlation analysis is performed in finance to ascertain the link between various financial assets.
+
+import pandas as pd
+import numpy as np
+
+# Seed for reproducibility
+np.random.seed(42)
+
+# Generate simple data
+data = {
+    'Age' : np.random.normal(30,10,100).astype(int),
+    'Annual Income (K$)' : np.random.normal(50,20,100).astype(int),
+    'Spending Score (1-100)' : np.random.randint(1,100,100),
+    'Years with Company' : np.random.normal(5, 2, 100).astype(int)
+}
+
+# Create dataframe
+df = pd.DataFrame(data)
+
+df
+     
+Age	Annual Income (K$)	Spending Score (1-100)	Years with Company
+0	34	21	2	7
+1	28	41	90	3
+2	36	43	17	5
+3	45	33	33	6
+4	27	46	9	3
+...	...	...	...	...
+95	15	57	22	7
+96	32	32	93	6
+97	32	53	67	4
+98	30	51	76	4
+99	27	27	26	2
+100 rows × 4 columns
+
+!pip install tabulate
+     
+Requirement already satisfied: tabulate in /usr/local/lib/python3.10/dist-packages (0.9.0)
+
+from tabulate import tabulate
+     
+
+correlation_matrix = df.corr()
+
+# print the correlation matrix as a table
+print(tabulate(correlation_matrix, headers='keys', tablefmt='grid', numalign="right", floatfmt= '.2f'))
+
+     
++------------------------+-------+----------------------+--------------------------+----------------------+
+|                        |   Age |   Annual Income (K$) |   Spending Score (1-100) |   Years with Company |
++========================+=======+======================+==========================+======================+
+| Age                    |  1.00 |                -0.13 |                     0.02 |                 0.01 |
++------------------------+-------+----------------------+--------------------------+----------------------+
+| Annual Income (K$)     | -0.13 |                 1.00 |                     0.02 |                -0.13 |
++------------------------+-------+----------------------+--------------------------+----------------------+
+| Spending Score (1-100) |  0.02 |                 0.02 |                     1.00 |                -0.13 |
++------------------------+-------+----------------------+--------------------------+----------------------+
+| Years with Company     |  0.01 |                -0.13 |                    -0.13 |                 1.00 |
++------------------------+-------+----------------------+--------------------------+----------------------+
