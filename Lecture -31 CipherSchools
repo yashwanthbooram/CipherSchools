@@ -1,1 +1,104 @@
+Unsupervised Learning (PCA, Hierarchical Clustering, K-Means Clustering)
 
+An Overview of Unsupervised Learning: Unsupervised learning is a potent machine learning method that, in the absence of labels or targets, extracts insights and hidden patterns from data. 
+It gives us the ability to investigate the underlying relationships and structure of complicated datasets, which produces insightful findings and fresh viewpoints.
+
+K-Means Grouping:
+Working steps include selecting the number of clusters (K),
+choosing random centroids, 
+assigning points to the closest centroid, 
+updating centroids, and repeating.
+
+from sklearn.datasets import make_blobs 
+from sklearn.cluster import KMeans 
+import matplotlib.pyplot as plt
+#Generating synthetic data 
+X, y = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
+#Training the model 
+model = KMeans(n_clusters=4)
+y_pred = model.fit_predict(X)
+#Plotting the results
+plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap='rainbow')
+plt.scatter(model.cluster_centers_[:, 8], model.cluster_centers_[:, 1], 1-300, c='black', marker="X")
+plt.title('K-Means Clustering')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.show()
+
+Hierarchical Clustering: • Create a tree-shaped structure called a dendrogram by developing the hierarchy of clusters in that way.
+
+Types of approaches
+• Agglomerative: This method works from the bottom up.
+• Divisive: This algorithm uses a top-down methodology.
+from sklearn.datasets import make_blobs
+from sklearn.cluster import AgglomerativeClustering
+import matplotlib.pyplot as plt
+#Generating synthetic data
+X, y = make blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
+#Training the model
+model = AgglomerativeClustering(n_clusters=4)
+y_pred = model.fit_predict(X)
+#Plotting the results
+plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap='rainbow')
+plt.title('Hierarchical Clustering')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.show()
+
+Using Principal Component Analysis (PCA) to Reduce Dimensions
+• PCA is an effective dimensionality reduction method that preserves the maximum amount of variation when projecting complicated, high-dimensional data onto a lower-dimensional subspace.
+• Principal component analysis (PCA) can greatly reduce the number of features in a dataset by determining the directions of highest variance.
+This makes data processing and visualization easier.
+• Difference and Correspondence
+• Eigenvalues and Eigenvectors: -Eigenvectors indicate the direction of variance; 
+-Eigenvalues show the amount of variation in the directions of the associated eigenvectors; 
+-The principal component of the dataset is the eigenvector with the highest eigenvalue.
+• Reduction of Dimensionality.
+
+from sklearn.datasets import load_iris 
+from sklearn.decomposition import PCA 
+import matplotlib.pyplot as plt
+#Loading the Iris dataset
+iris = load_iris() 
+X = iris.data 
+y = iris.target
+# Applying PCA \
+pca = PCA(n_components=2) 
+X_pca = pca.fit_transform(X)
+#Plotting the results
+plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y, сmap='rainbow') 
+plt.title('PCA on Iris Dataset') 
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.show()
+
+Comparing and Differing Clustering Methodologies
+1. K-Means vs. Hierarchical Clustering: K-Means is quicker and more scalable, but it needs the number of clusters to be specified beforehand.
+Although more flexible, hierarchical approaches can need a lot of processing power when working with huge datasets.
+2. Interpreting Cluster Boundaries: While hierarchical techniques can find clusters of different densities and forms, K-Means generates convex, evenly-sized clusters.
+3. Managing Outliers: Because hierarchical clustering can recognize outliers as separate clusters, it is more resilient to them.
+Because K-Means is more susceptible to outliers, the cluster centroids may become skewed.
+4-Visualization and Analysis: Dendrogram visualizations, which offer insights into the relationships between clusters, are a natural fit for hierarchical clustering. 
+For rapid, high-level clustering analysis, K-Means works well.
+
+Applications of Unsupervised Learning in the Real World: 
+• Algorithms for Unsupervised Learning are widely applicable in a variety of sectors. T
+hese strategies unearth valuable insights hidden within data, from cybersecurity anomaly detection to customer segmentation in retail.
+• In the medical area, unsupervised approaches facilitate visualization and analysis by enabling dimensionality reduction for complex datasets. 
+They can be applied to medication development and disease subtyping.
+
+Applications of Unsupervised Learning in the Real World: 
+
+
+• Algorithms for Unsupervised Learning are widely applicable in a variety of sectors. These strategies unearth valuable insights hidden within data, from cybersecurity anomaly detection to customer segmentation in retail.
+• In the medical area, unsupervised approaches facilitate visualization and analysis by enabling dimensionality reduction for complex datasets. They can be applied to medication development and disease subtyping.
+
+
+Limitations and Difficulties with Unsupervised Learning
+1. Interpretability: It can be difficult to discern the underlying patterns and correlations in the data due to the complexity and difficulty of interpreting unsupervised models.
+2. Assessment
+  As "optimal" clustering and dimensionality reduction are not well defined, assessing the efficacy and performance of unsupervised models can be subjective.
+3. Expandability
+  The application of some unsupervised approaches, like hierarchical clustering, to big data problems may be limited as a result of their computing cost as dataset sizes increase.
+4. Perceptive of Outliers
+  The findings of unsupervised algorithms, particularly clustering techniques, might be significantly distorted by the existence of outliers in the data.
