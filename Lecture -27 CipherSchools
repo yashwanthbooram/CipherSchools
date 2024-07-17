@@ -1,1 +1,58 @@
+Handling and Removing Outliers
 
+• Outliers are defined as data points that substantially deviate from the majority of observations.
+They may arise from experimental errors or data variability.
+• Handling Outliers: To increase the precision of statistical studies and machine learning models, one must detect outliers and determine whether to exclude or modify them.
+
+Real-World Use Case:
+• Financial Data Analysis: To stop fraud and increase the precision of financial models, find and eliminate anomalies in financial transaction data.
+• consumer Data Management: To produce precise consumer categories and enhance marketing tactics, clean up customer data by addressing outliers in spending, age, and income.
+• Health Data Analysis: To guarantee correct diagnosis and treatment plans, identify and manage outliers in patient health records, such as blood pressure and cholesterol levels.
+
+import pandas as pd
+# Load the dataset
+df = pd.read_csv('outliers_data.csv')
+print(df)
+
+Visualizing Outliers using Boxplots
+
+import matplotlib.pyplot as plt
+#Boxplot to visualize outliers in the Age column
+plt.figure(figsize(10, 5))
+plt.subplot(1, 2, 1)
+plt.boxplot(df['Age'].dropna())
+plt.title('Boxplot of Age')
+# Boxplot to visualize outliers in the Salary column
+plt.subplot(1, 2, 2)
+plt.boxplot(df['Salary').dropna())
+plt.title("Boxplot of Salary')
+plt.show()
+
+Handling Outliers - Capping Outliers
+
+# Capping the outliers using IQR method
+df_capped = df.copy() 
+for column in ['Age', 'Salary']:
+    Q1 = df_capped[column].quantile(0.25)
+    Q3 = df_capped[column].quantile(0.75)
+    IQR = Q3 - Q1 
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR 
+    df_capped[column] = df_capped [column].apply(lambda x: upper_bound if x > upper_bound else (lower_bound if x < lower_bound else x))
+print('Data after capping outliers using IQR method:')
+print(df_capped)
+
+Handling Outliers - Replacing Outliers with Mean/Median
+
+# Replacing the outlierss with median values
+df_replaced = df.copy() 
+for column in ['Age', 'Salary']:
+    Q1 = df_replaced[column].quantile(0.25)
+    Q3 = df_replaced[column].quantile(0.75)
+    IQR = Q3 - Q1 
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR 
+    median = df_replaced[column].median()
+    df_replaced[column] = df_replacped [column].apply(lambda x: median if x > upper_bound or x < lower_bound else x)
+print('Data after replacing outliers with median values:')
+print(df_replaced)
